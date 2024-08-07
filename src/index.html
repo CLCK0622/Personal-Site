@@ -11,15 +11,6 @@
   <script src="https://unpkg.com/scrollreveal"></script>
   <script>ScrollReveal({ reset: true });</script>
   <script src="main.js"></script>
-  <script>
-    setInterval(function() {
-        if (localStorage.theme === 'dark' || (!('theme' in  localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.getElementById("html").classList.add('dark')
-        } else {
-            document.getElementById("html").classList.remove('dark')
-        }
-    }, 1000);
-  </script>
 </head>
 <body class="flex flex-col justify-content-center font-display w-full bg-gray-50 dark:bg-slate-800">
     <div class="flex flex-col w-full">
@@ -153,6 +144,11 @@
             </ul>
         </div>
         <div class="box tag text-gray-500 dark:text-gray-300">
+            Toggle Dark Mode:
+            <label class="switch mb-2">
+                <input type="checkbox" id="darkmode" onclick="change_mode()">
+                <span class="slider round"></span>
+            </label>
             <p class="tag text-sm ">© 2024 <a href="https://www.clckblog.space/" class="link">Kevin Zhong (CLCK)</a></p>
             <p class="tag text-sm">Built with <a href="https://www.11ty.dev/" class="link" target="_blank">11ty</a> and <a href="https://tailwindcss.com/" class="link" target="_blank">Tailwind CSS</a></p>
             <p class="tag text-sm">Powered by <a href="https://vercel.com/" class="link" target="_blank">Vercel</a></p>
