@@ -1,3 +1,52 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+@layer base {
+    table {
+        @apply border-collapse border-y text-lg table-fixed;
+    }
+
+    thead {
+        @apply bg-gray-50;
+    }
+
+    th,
+    td,
+    tr {
+        @apply border-collapse border-y py-2;
+    }
+
+    .box {
+        @apply p-8 rounded-3xl shadow hover:shadow-lg mx-auto text-left w-1/2 mt-10 bg-white;
+    }
+
+    .box:first-of-type {
+        @apply mt-20
+    }
+
+    .box:last-of-type {
+        @apply mb-20
+    }
+
+    .link {
+        @apply text-blue-500 hover:underline;
+    }
+
+    h1 {
+        @apply text-4xl font-bold mb-4 font-title;
+    }
+
+    h2 {
+        @apply text-2xl font-bold mb-2 font-title;
+    }
+
+}
+
+html.sr .tag {
+    visibility: hidden;
+}
