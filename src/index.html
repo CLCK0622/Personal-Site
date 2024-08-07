@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" id="html" class="!scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +10,21 @@
 <meta property="og:url" content="https://www.clckblog.space/">
   <script src="https://unpkg.com/scrollreveal"></script>
   <script>ScrollReveal({ reset: true });</script>
+  <script src="main.js"></script>
+  <script>
+    setInterval(function() {
+        if (localStorage.theme === 'dark' || (!('theme' in  localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.getElementById("html").classList.add('dark')
+        } else {
+            document.getElementById("html").classList.remove('dark')
+        }
+    }, 1000);
+  </script>
 </head>
-<body class="flex flex-col justify-content-center font-display w-full bg-gray-50">
+<body class="flex flex-col justify-content-center font-display w-full bg-gray-50 dark:bg-slate-800">
     <div class="flex flex-col w-full">
-        <div class="tag box">
-            <h1 class="tag">Hi there 👋</h1>
+        <div class="tag box" id="Intro">
+            <h1 class="tag"><a href="#Intro">Hi there 👋</a></h1>
             <hr class="mb-4" />
             <p class="text-base md:text-lg mb-4 tag">I'm Kevin Zhong, aka CLCK.</p>
             <p class="text-base md:text-lg mb-4 tag">17 y.o. high school student | HSEFZ 25' </p>
@@ -24,8 +34,8 @@
                 <a href="https://github.com/clck0622" class="link">GitHub</a> | <a href="https://www.instagram.com/clck0622/" class="link">Instagram</a> | <a href="https://unsplash.com/@clck0622" class="link">Unsplash</a> | <a href="mailto:zhongyi070622@gmail.com" class="link">Email</a>
             </p>
         </div>
-        <div class="box tag">
-            <h2 class="tag">📑 Projects</h2>
+        <div class="box tag" id="Projects">
+            <h2 class="tag"><a href="#Projects">📑 Projects</a></h2>
             <hr class="mb-4" />
             <p class="text-base md:text-lg mb-4 tag">The following table contains my main projects.</p>
             <table class="w-full mb-4">
@@ -85,8 +95,8 @@
                 </tbody>
             </table>
         </div>
-        <div class="box tag">
-            <h2 class="tag">💰 Sponsor</h2>
+        <div class="box tag" id="Sponsor">
+            <h2 class="tag"><a href="#Sponsor">💰 Sponsor</a></h2>
             <hr class="mb-4" />
             <p class="text-base md:text-lg mb-4 tag">I appreciate your generous sponsorship.</p>
             <table class="w-full mb-4">
@@ -104,8 +114,8 @@
                 </tbody>
             </table>
         </div>
-        <div class="box tag">
-            <h2 class="tag">⚙️ Skills</h2>
+        <div class="box tag" id="Skills">
+            <h2 class="tag"><a href="#Skills">⚙️ Skills</a></h2>
             <hr class="mb-4" />
             <p class="text-base md:text-lg mb-2 tag">I know: </p>
             <ul class="list-disc list-inside">
@@ -120,11 +130,11 @@
                 <li class="text-base mb-1 tag">React</li>
                 <li class="text-base mb-1 tag">Advanced Pytorch</li>
                 <li class="text-base mb-1 tag">Backend WebDEV</li>
-                <li class="text-base tag">...</li>
+                <li class="text-base last-of-type:mb-4 tag">...</li>
             </ul>
         </div>
-        <div class="box tag">
-            <h2 class="tag">🖥️ Working Environment</h2>
+        <div class="box tag" id="Env">
+            <h2 class="tag"><a href="#Env">🖥️ Working Environment</a></h2>
             <hr class="mb-4" />
             <p class="text-base md:text-lg mb-2 tag">OS: </p>
             <ul class="list-disc list-inside">
@@ -139,13 +149,13 @@
                 <li class="text-base mb-1 tag">VS Code</li>
                 <li class="text-base mb-1 tag">Xcode</li>
                 <li class="text-base mb-1 tag">Google Colab</li>
-                <li class="text-base tag">...</li>
+                <li class="text-base last-of-type:mb-4 tag">...</li>
             </ul>
         </div>
-        <div class="box tag">
-            <p class="tag text-sm text-gray-500">© 2024 <a href="https://www.clckblog.space/" class="link">Kevin Zhong (CLCK)</a></p>
-            <p class="tag text-sm text-gray-500">Built with <a href="https://www.11ty.dev/" class="link" target="_blank">11ty</a> and <a href="https://tailwindcss.com/" class="link" target="_blank">Tailwind CSS</a></p>
-            <p class="tag text-sm text-gray-500">Powered by <a href="https://vercel.com/" class="link" target="_blank">Vercel</a></p>
+        <div class="box tag text-gray-500 dark:text-gray-300">
+            <p class="tag text-sm ">© 2024 <a href="https://www.clckblog.space/" class="link">Kevin Zhong (CLCK)</a></p>
+            <p class="tag text-sm">Built with <a href="https://www.11ty.dev/" class="link" target="_blank">11ty</a> and <a href="https://tailwindcss.com/" class="link" target="_blank">Tailwind CSS</a></p>
+            <p class="tag text-sm">Powered by <a href="https://vercel.com/" class="link" target="_blank">Vercel</a></p>
         </div>
     </div>
     <script>
