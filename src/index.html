@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" id="html" class="!scroll-smooth">
+<html lang="en" class="!scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +7,13 @@
   <link rel="stylesheet" href="styles.css">
   <meta property="og:title" content="This is CLCK.">
 <meta property="og:description" content="This is a personal homepage for Kevin Zhong (CLCK).">
+<meta property="description" content="This is a personal homepage for Kevin Zhong (CLCK).">
 <meta property="og:url" content="https://www.clckblog.space/">
   <script src="https://unpkg.com/scrollreveal"></script>
   <script>ScrollReveal({ reset: true });</script>
   <script src="main.js"></script>
 </head>
-<body class="flex flex-col justify-content-center font-display w-full bg-gray-50 dark:bg-slate-800" onload="init_mode()">
+<body class="flex flex-col justify-content-center font-display w-full bg-gray-50 dark:bg-slate-800">
     <div class="flex flex-col w-full">
         <div class="tag box" id="Intro">
             <h1 class="tag"><a href="#Intro">Hi there 👋</a></h1>
@@ -149,9 +150,9 @@
             </ul>
         </div>
         <div class="box tag text-gray-500 dark:text-gray-300">
-            <span class="hover:ring-1 hover:ring-blue-500 dark:hover:ring-blue-300 hover:ring-offset-white dark:hover:ring-offset-slate-600 hover:ring-offset-4 rounded-lg"><span class="mx-1">Toggle Dark Mode </span>
+            <span class="hover:ring-1 hover:ring-blue-500 dark:hover:ring-blue-300 hover:ring-offset-white dark:hover:ring-offset-slate-600 hover:ring-offset-4 rounded-lg"><span class="mx-1" id="darkmodelabel">Toggle Dark Mode </span>
                 <label class="switch mb-4">
-                    <input type="checkbox" id="darkmode" onclick="change_mode()" on="false">
+                    <input type="checkbox" id="darkmode" onclick="change_mode()" on="false" aria-labelledby="darkmodelabel">
                     <span class="slider round"></span>
                 </label>
             </span>

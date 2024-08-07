@@ -1,28 +1,29 @@
+document.addEventListener('DOMContentLoaded', (event) => {
+    init_mode();
+});
+
 function init_mode() {
-    if ('theme' in localStorage) {
-        if (localStorage.theme === 'dark') {
-            document.getElementById("darkmode").setAttribute("on", true)
-            document.getElementById("darkmode").checked = true
-        }
-    }
-    if (localStorage.theme === 'light' || (!('theme' in  localStorage))) {
-        document.getElementById("html").classList.remove('dark')
+    const darkmodeCheckbox = document.getElementById("darkmode");
+    const htmlElement = document.documentElement;
+
+    if (localStorage.theme === 'dark') {
+        darkmodeCheckbox.checked = true;
+        htmlElement.classList.add('dark');
     } else {
-        document.getElementById("html").classList.add('dark')
+        darkmodeCheckbox.checked = false;
+        htmlElement.classList.remove('dark');
     }
 }
 
 function change_mode() {
-    if (localStorage.theme === 'light' || !('theme' in  localStorage)) {
-        localStorage.theme = 'dark'
-        document.getElementById("darkmode").setAttribute("on", true)
+    const darkmodeCheckbox = document.getElementById("darkmode");
+    const htmlElement = document.documentElement;
+
+    if (darkmodeCheckbox.checked) {
+        localStorage.theme = 'dark';
+        htmlElement.classList.add('dark');
     } else {
-        localStorage.theme = 'light'
-        document.getElementById("darkmode").setAttribute("on", false)
-    }
-    if (localStorage.theme === 'light' || (!('theme' in  localStorage))) {
-        document.getElementById("html").classList.remove('dark')
-    } else {
-        document.getElementById("html").classList.add('dark')
+        localStorage.theme = 'light';
+        htmlElement.classList.remove('dark');
     }
 }
