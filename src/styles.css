@@ -22,7 +22,7 @@
     }
 
     .box {
-        @apply p-8 rounded-3xl shadow hover:shadow-lg mx-auto text-left w-11/12 md:w-1/2 mt-10 bg-white;
+        @apply p-8 rounded-3xl shadow hover:shadow-lg mx-auto text-left w-11/12 md:max-w-xl xl:max-w-3xl 2xl:max-w-4xl mt-10 bg-white;
     }
 
     .box:first-of-type {
