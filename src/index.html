@@ -12,7 +12,7 @@
   <script>ScrollReveal({ reset: true });</script>
   <script src="main.js"></script>
 </head>
-<body class="flex flex-col justify-content-center font-display w-full bg-gray-50 dark:bg-slate-800">
+<body class="flex flex-col justify-content-center font-display w-full bg-gray-50 dark:bg-slate-800" onload="init_mode()">
     <div class="flex flex-col w-full">
         <div class="tag box" id="Intro">
             <h1 class="tag"><a href="#Intro">Hi there 👋</a></h1>
@@ -144,9 +144,9 @@
             </ul>
         </div>
         <div class="box tag text-gray-500 dark:text-gray-300">
-            <span class="ring-1 ring-blue-500 dark:ring-blue-300 ring-offset-white dark:ring-offset-slate-600 ring-offset-4 rounded-lg"><span class="mx-1">Toggle Dark Mode </span>
+            <span class="hover:ring-1 hover:ring-blue-500 dark:hover:ring-blue-300 hover:ring-offset-white dark:hover:ring-offset-slate-600 hover:ring-offset-4 rounded-lg"><span class="mx-1">Toggle Dark Mode </span>
                 <label class="switch mb-4">
-                    <input type="checkbox" id="darkmode" onclick="change_mode()">
+                    <input type="checkbox" id="darkmode" onclick="change_mode()" on="false">
                     <span class="slider round"></span>
                 </label>
             </span>
