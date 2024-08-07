@@ -8,7 +8,7 @@
 
 @layer base {
     table {
-        @apply border-collapse border-y text-lg table-fixed;
+        @apply border-collapse border-y text-base md:text-lg table-fixed;
     }
 
     thead {
@@ -22,7 +22,7 @@
     }
 
     .box {
-        @apply p-8 rounded-3xl shadow hover:shadow-lg mx-auto text-left w-1/2 mt-10 bg-white;
+        @apply p-8 rounded-3xl shadow hover:shadow-lg mx-auto text-left w-11/12 md:w-1/2 mt-10 bg-white;
     }
 
     .box:first-of-type {
@@ -38,11 +38,11 @@
     }
 
     h1 {
-        @apply text-4xl font-bold mb-4 font-title;
+        @apply text-2xl md:text-4xl font-bold mb-4 font-title;
     }
 
     h2 {
-        @apply text-2xl font-bold mb-2 font-title;
+        @apply text-lg md:text-2xl font-bold mb-2 font-title;
     }
 
 }
