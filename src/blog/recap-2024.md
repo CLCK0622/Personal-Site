@@ -83,6 +83,8 @@ description: "2024 年度总结"
 
 ![DSC_2721.JPG](https://s2.loli.net/2024/12/25/WomSpnytHC2Y3iL.jpg)
 
+## July
+
 夏校，去 JHU 路上在 SFO 拍到了今年最喜欢的一张照片，转瞬即逝的双太阳，庆幸了很久当时没打盹也没把相机放箱子里托运。那天凌晨冻了几个小时没地方买毯子还历历在目。
 
 ![IMG_4037.jpg](https://s2.loli.net/2024/12/25/eEYmCcuKQ3Py51j.jpg)

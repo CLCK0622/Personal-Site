@@ -1,4 +1,5 @@
 const { DateTime } = require("luxon");
+const { JSDOM } = require("jsdom");
 
 module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/styles.css");
@@ -16,7 +17,23 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addFilter("date", (dateObj, format = "yyyy-MM-dd") => {
         return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(format);
-      });
+    });
+
+    eleventyConfig.addTransform("lazyloadImages", function (content, outputPath) {
+        if (outputPath && outputPath.endsWith(".html")) {
+            const dom = new JSDOM(content);
+            const images = dom.window.document.querySelectorAll("img");
+
+            images.forEach((img) => {
+                if (!img.hasAttribute("loading")) {
+                    img.setAttribute("loading", "lazy");
+                }
+            });
+
+            return dom.serialize();
+        }
+        return content;
+    });
 
     return {
         dir: {
