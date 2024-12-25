@@ -1,9 +1,12 @@
 const { DateTime } = require("luxon");
 const { JSDOM } = require("jsdom");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/styles.css");
     eleventyConfig.addPassthroughCopy("src/main.js");
+    
+    eleventyConfig.addPlugin(pluginRss);
 
     eleventyConfig.addCollection("pages", function (collectionApi) {
         return collectionApi.getFilteredByGlob("src/sections/*.md").sort((a, b) => a.data.order - b.data.order);
