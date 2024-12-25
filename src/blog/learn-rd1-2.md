@@ -2,7 +2,7 @@
 title: "初赛笔记2——离散数学基础"
 date: 2020-10-02
 layout: "post.njk"
-description: ""
+description: "CSP 初赛笔记"
 ---
 
 # 离散数学基础

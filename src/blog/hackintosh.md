@@ -2,7 +2,7 @@
 title: "黑苹果常用工具及命令"
 date: 2023-02-09
 layout: "post.njk"
-description: ""
+description: "Hackintosh 相关"
 ---
 
 转载自[远景论坛](https://bbs.pcbeta.com/viewthread-1957443-1-1.html)。

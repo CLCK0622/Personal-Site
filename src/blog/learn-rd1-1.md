@@ -2,7 +2,7 @@
 title: "初赛笔记1——计算机科学基础"
 date: 2020-10-01
 layout: "post.njk"
-description: ""
+description: "CSP 初赛笔记"
 ---
 
 # 计算机科学基础
