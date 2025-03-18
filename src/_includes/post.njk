@@ -5,6 +5,15 @@ layout: "base.njk"
 <main>
     <article>
         <section>
+            <div id="post_info">
+            {{ date | date("MMMM d, yyyy") }}
+            {% if tags and tags.length > 0 %}
+                <span class="material-symbols-outlined" id="tag_icon">
+                sell
+                </span>
+                {{ tags | join(", ") }}
+            {% endif %}
+            </div>
             <h1>{{ title }}</h1>
             {{ content | safe }}
         </section>

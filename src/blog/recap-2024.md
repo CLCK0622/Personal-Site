@@ -1,6 +1,7 @@
 ---
 title: "RECAP2024：胶卷中的一年"
 date: 2024-12-25
+tags: ["Life"]
 layout: "post.njk"
 description: "2024 年度总结"
 ---

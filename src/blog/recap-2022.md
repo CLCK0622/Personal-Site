@@ -1,6 +1,7 @@
 ---
 title: "诗酒趁年华——年终回顾（2022）"
 date: 2022-12-26
+tags: ["Life"]
 layout: "post.njk"
 description: "2022 年度总结"
 ---

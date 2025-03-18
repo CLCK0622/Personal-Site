@@ -1,6 +1,7 @@
 ---
 title: "【模板】树状数组1 & 学习笔记"
 date: 2020-08-11
+tags: ["Tech"]
 layout: "post.njk"
 description: ""
 ---

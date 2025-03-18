@@ -1,6 +1,7 @@
 ---
 title: "初赛笔记1——计算机科学基础"
 date: 2020-10-01
+tags: ["Tech"]
 layout: "post.njk"
 description: "CSP 初赛笔记"
 ---

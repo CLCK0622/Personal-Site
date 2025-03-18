@@ -1,6 +1,7 @@
 ---
 title: "RECAP2023：旧游无处不堪寻"
 date: 2023-12-13
+tags: ["Life"]
 layout: "post.njk"
 description: "2023 年度总结"
 ---

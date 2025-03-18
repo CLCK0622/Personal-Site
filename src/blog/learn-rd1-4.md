@@ -1,6 +1,7 @@
 ---
 title: "初赛笔记4——数据结构与算法基础"
 date: 2020-10-04
+tags: ["Tech"]
 layout: "post.njk"
 description: "CSP 初赛笔记"
 ---

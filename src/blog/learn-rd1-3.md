@@ -1,6 +1,7 @@
 ---
 title: "初赛笔记3——计数与概率基础"
 date: 2020-10-03
+tags: ["Tech"]
 layout: "post.njk"
 description: "CSP 初赛笔记"
 ---

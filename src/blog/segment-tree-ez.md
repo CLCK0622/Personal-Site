@@ -1,6 +1,7 @@
 ---
 title: "线段树 学习笔记 EZ"
 date: 2020-08-10
+tags: ["Tech"]
 layout: "post.njk"
 description: ""
 ---

@@ -1,6 +1,7 @@
 ---
 title: "黑苹果常用工具及命令"
 date: 2023-02-09
+tags: ["Tech"]
 layout: "post.njk"
 description: "Hackintosh 相关"
 ---

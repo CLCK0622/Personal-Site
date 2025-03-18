@@ -18,8 +18,8 @@ module.exports = function (eleventyConfig) {
         });
     });
 
-    eleventyConfig.addFilter("date", (dateObj, format = "yyyy-MM-dd") => {
-        return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(format);
+    eleventyConfig.addFilter("date", (dateStr, format = "yyyy-MM-dd") => {
+        return DateTime.fromISO(dateStr).toFormat(format);
     });
 
     eleventyConfig.addTransform("lazyloadImages", function (content, outputPath) {
