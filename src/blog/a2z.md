@@ -1,5 +1,5 @@
 ---
-title: "2024: 浏览器从A到Z"
+title: "2024: 浏览器从 A 到 Z"
 date: 2025-03-18
 tags: ["Tech"]
 layout: "post.njk"
