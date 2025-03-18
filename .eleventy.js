@@ -18,10 +18,23 @@ module.exports = function (eleventyConfig) {
         });
     });
 
-    eleventyConfig.addFilter("date", (dateStr, format = "yyyy-MM-dd") => {
-        let dt = DateTime.fromFormat(dateStr, "yyyy-MM-dd");
-        return dt.isValid ? dt.toFormat(format) : "Invalid date";
+    const { DateTime } = require("luxon");
+
+    eleventyConfig.addFilter("date", (dateInput, format = "yyyy-MM-dd") => {
+        if (!dateInput) return "Invalid date";
+
+        if (dateInput instanceof Date) {
+            return DateTime.fromJSDate(dateInput).toFormat(format);
+        }
+
+        if (typeof dateInput === "string") {
+            let dt = DateTime.fromFormat(dateInput, "yyyy-MM-dd");
+            return dt.isValid ? dt.toFormat(format) : "Invalid date";
+        }
+
+        return "Invalid date";
     });
+
 
     eleventyConfig.addTransform("lazyloadImages", function (content, outputPath) {
         if (outputPath && outputPath.endsWith(".html")) {
