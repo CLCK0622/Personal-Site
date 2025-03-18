@@ -106,8 +106,8 @@ $auxi-text-color: #a9a9a9;
         font-weight: bold;
         color: #1f2937 !important;
     }
-    flex: auto;
 
+    flex: auto;
 }
 
 .nav-links {
@@ -323,7 +323,12 @@ html.dark {
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
     }
 
-    .nav-title,
+    .nav-title {
+        a {
+            color: $dark-text-color !important;
+        }
+    }
+
     h1,
     h2,
     h3,
