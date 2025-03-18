@@ -6,8 +6,6 @@ layout: "post.njk"
 description: "Chrome 的网页自动补全都是哪些网站呢"
 ---
 
-# 2024：浏览器从 A 到 Z
-
 本文的诞生离不开 [Will 的《2024：浏览器从 A 到 Z》](https://blog.mrwillcom.com/2025/03/04/2024-browser-from-a-to-z/)。
 
 > 和大部分人使用浏览器书签或者导航类网站索引自己的常用网站不同，我强烈依赖基于浏览器地址栏自动补全来访问我常用的网站。那么，将 A-Z 逐一输入到 Google Chrome 的地址栏里，我的 Google Chrome 都会自动补全出哪些域名呢？

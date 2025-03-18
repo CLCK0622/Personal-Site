@@ -19,7 +19,8 @@ module.exports = function (eleventyConfig) {
     });
 
     eleventyConfig.addFilter("date", (dateStr, format = "yyyy-MM-dd") => {
-        return DateTime.fromISO(dateStr).toFormat(format);
+        let dt = DateTime.fromFormat(dateStr, "yyyy-MM-dd");
+        return dt.isValid ? dt.toFormat(format) : "Invalid date";
     });
 
     eleventyConfig.addTransform("lazyloadImages", function (content, outputPath) {

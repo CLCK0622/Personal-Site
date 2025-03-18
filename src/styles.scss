@@ -1,4 +1,5 @@
 // 字体导入
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://static.zeoseven.com/zsft/292/main/result.css");
 
@@ -11,17 +12,13 @@
 }
 
 body {
-    font-family: "Gentium Book Plus", "LXGW WenKai", serif;
+    font-family: "Gentium Book Plus", "LXGW WenKai", "Source Serif 4", serif;
     font-weight: 500;
     background-color: rgb(249 250 251);
     color: #1f2937;
     line-height: 2;
     margin: 0;
     padding: 0;
-}
-
-:lang(zh) {
-    font-family: "LXGW WenKai", sans-serif;
 }
 
 img {
@@ -48,6 +45,7 @@ span,
 li,
 td,
 th {
+    font-family: "Source Serif 4", "LXGW WenKai", serif;
     color: #1f2937;
 }
 
@@ -103,10 +101,13 @@ $auxi-text-color: #a9a9a9;
 }
 
 .nav-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #1f2937;
+    a {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #1f2937 !important;
+    }
     flex: auto;
+
 }
 
 .nav-links {
