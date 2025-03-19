@@ -130,6 +130,15 @@ $auxi-text-color: #a9a9a9;
     width: 100%;
 }
 
+// 引用
+blockquote {
+    border-left: 4px solid #ccc;
+    padding-left: 16px;
+    margin: 16px 0;
+    color: #555;
+    font-style: italic;
+}
+
 // 标题
 h1 {
     font-size: 2.25rem;
